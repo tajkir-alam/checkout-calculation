@@ -8,17 +8,7 @@ priceAdd('drone-cart', 'drone-price', 'drone-cost');
 priceAdd('mic-cart', 'mic-price', 'mic-cost');
 
 
-function checkoutBtn(){
-    if(document.getElementById('total-bill').innerText != 00){
-        alert('Your product will be deliver soon... Stay Tune!!!!!');
-        document.getElementById('coupon-input').value = "";
-        document.getElementById('action-cam-cost').innerText = '00';
-        document.getElementById('dslr-cam-cost').innerText = '00';
-        document.getElementById('drone-cost').innerText = '00';
-        document.getElementById('mic-cost').innerText = '00';
-        document.getElementById('total-bill').innerText = '00';
-    }
-}
+
 document.getElementById('coupon-input').addEventListener('keyup', function(){
     if(document.getElementById('coupon-input').value == 'fromRion'){
         const totalAmountString = document.getElementById('total-bill').innerText;
@@ -26,8 +16,27 @@ document.getElementById('coupon-input').addEventListener('keyup', function(){
         const totalAmount = totalAmountNumber * (10/100);
         const totalBill = document.getElementById('total-bill').innerText - totalAmount;
         document.getElementById('total-bill').innerText = totalBill;
+
+        const p = document.createElement('p');
+        p.className ='text-slate-500 font-bold ml-2';
+        p.innerText = 'Here is your 10% discount';
+        document.getElementById('coupon-section').appendChild(p);
+        document.querySelectorAll('p')[1].remove();
     }
 })
+
+function checkoutBtn(){
+    if(document.getElementById('total-bill').innerText != 00){
+        document.getElementById('coupon-input').value = "";
+        document.getElementById('action-cam-cost').innerText = '00';
+        document.getElementById('dslr-cam-cost').innerText = '00';
+        document.getElementById('drone-cost').innerText = '00';
+        document.getElementById('mic-cost').innerText = '00';
+        document.getElementById('total-bill').innerText = '00';
+        alert('Your product will be deliver soon... Stay Tune!!!!!');
+    }
+}
+
 
 
 
