@@ -1,0 +1,1 @@
+priceAdd('action-cart', 'action-cam-price', 'action-cam-cost');
