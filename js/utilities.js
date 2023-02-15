@@ -19,5 +19,9 @@ function priceAdd(cartId, priceIs, priceAdded){
         const totalinText = document.getElementById('total-bill');
         // const totalBill = parseFloat(totalinText);
         totalinText.innerText = totalAmount;
+
+        
+
+        
     })
 }
