@@ -9,6 +9,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Flowbite CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.css"  rel="stylesheet" />
+    <!-- FontAwesome CDN -->
+    <script src="https://kit.fontawesome.com/b8b380aec0.js" crossorigin="anonymous"></script>
 </head>
 <body class="w-4/5 mx-auto">
     <header>
@@ -19,8 +21,8 @@
 
     <main class="mt-12 md:mt-24">
         <section class="grid grid-cols-1 md:grid-cols-2 gap-5">
-            <!-- Products Section -->
-            <section class="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-8">
+            <!-- Products side -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-8">
                 <div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg drop-shadow-xl dark:bg-gray-800 dark:border-gray-700">
                     <a href="#" class="flex justify-center">
                         <img class="p-8 rounded-t-lg" src="images/action.png" alt="product image" />
@@ -109,10 +111,10 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
 
-            <!-- Checkout Calculation section -->
-            <section class="md:ml-16">
+            <!-- Checkout Calculation Side -->
+            <div class="md:ml-16">
                 <h2 class="text-2xl text-center text-slate-700 font-medium tracing-wide uppercase" >here is your bill</h2> <hr class="border-slate-300 w-1/2 mx-auto mb-8">
                 <div class="py-12 px-10 shadow-xl">
                     <div class="flex justify-between">
@@ -137,12 +139,33 @@
                     </div>
                     <a onclick="checkoutBtn()" class="text-slate-100 bg-blue-600 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-semibold rounded-lg text-lg tracing-widest px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 block mt-6 cursor-pointer">Check Out</a>
                 </div>
-            </section>
-        </sectionc>
+            </div>
+        </section>
 
         <!-- Blog Section -->
-        <section>
-            <h1>Post a Blog</h1>
+        <section class="mt-24">
+            <h1 class="text-5xl font-semibold">Post a Blog </h1>
+            <hr class="w-4/5 md:w-3/12 mt-2 border-slate-300">
+
+            <div class="px-12 py-8 bg-gray-200 mt-12">
+                <div class="flex justify-between">
+                    <div class="md:flex gap-4 ml-4">
+                        <p id="bold" class="font-extrabold">B</p>
+                        <p id="italic" class="font-bold italic">I</p>
+                        <p id="under-line" class="font-bold underline">U</p>
+                    </div>
+                    <div>
+
+                    </div>
+                    <div>
+
+                    </div>
+                </div>
+                <div>
+                    <textarea name="" id="" rows="10"  class="hidden md:block py-2 px-4 w-full h-auto mt-8 border-slate-200 shadow-xl resize-none focus:border-0 focus:ring-slate-100"></textarea>
+                    <textarea name="" id="" rows="3"  class="block md:hidden py-2 px-4 w-full h-auto mt-8 border-slate-200 shadow-xl resize-none focus:border-0 focus:ring-slate-100"></textarea>
+                </div>
+            </div>
         </section>
     </main>
 
