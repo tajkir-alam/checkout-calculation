@@ -8,4 +8,4 @@ priceAdd('drone-cart', 'drone-price', 'drone-cost');
 priceAdd('mic-cart', 'mic-price', 'mic-cost');
 
 
-total();
+// total('action-cart');
