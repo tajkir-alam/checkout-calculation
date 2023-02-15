@@ -148,7 +148,7 @@
             <hr class="w-4/5 md:w-3/12 mt-2 border-slate-300">
 
             <div class="px-12 py-8 bg-gray-200 mt-12">
-                <div class="flex justify-between">
+                <div class="flex justify-between gap-12">
                     <div class="md:flex gap-4 ml-4">
                         <p id="bold" class="font-extrabold cursor-pointer">B</p>
                         <p id="italic" class="font-bold italic cursor-pointer">I</p>
@@ -160,14 +160,14 @@
                         <i id="align-right" class="fa-solid fa-align-right cursor-pointer"></i>
                         <i id="align-justify" class="fa-solid fa-align-justify cursor-pointer"></i>
                     </div>
-                    <div class="md:flex gap-4">
-                        <input type="number" name="" id="number-style" class="focus:ring-0 focus:border-0 border-0 shadow w-1/4">
+                    <div class="md:flex gap-4 text-right">
+                        <input type="number" value="16" name="" id="number-style" class="focus:ring-0 focus:border-0 border-0 shadow w-1/4">
                         <p id="text-transform" class="font-extrabold cursor-pointer">aA</p>
                         <input type="color" name="" id="text-color" value="#FF8040" class="cursor-pointer">
                     </div>
                 </div>
                 <div>
-                    <textarea name="" id="" rows="10"  class="hidden md:block py-2 px-4 w-full h-auto mt-8 border-slate-200 shadow-xl resize-none focus:border-0 focus:ring-slate-100"></textarea>
+                    <textarea name="" id="text-area" rows="10"  class="hidden md:block py-2 px-4 w-full h-auto mt-8 border-slate-200 shadow-xl resize-none focus:border-0 focus:ring-slate-100"></textarea>
                     <textarea name="" id="" rows="3"  class="block md:hidden py-2 px-4 w-full h-auto mt-8 border-slate-200 shadow-xl resize-none focus:border-0 focus:ring-slate-100"></textarea>
                     <a onclick="uploadBtn()" class="text-slate-100 bg-blue-600 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-semibold rounded-lg text-lg tracing-widest px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 block mt-6 cursor-pointer">Upload Content</a>
                 </div>

@@ -13,3 +13,46 @@ function checkoutBtn(){
         alert('Your product will be deliver soon... Stay Tune!!!!!');
     }
 }
+
+
+
+
+document.getElementById('bold').addEventListener('click', function(){
+    document.getElementById('text-area').classList.toggle('font-bold');
+})
+document.getElementById('italic').addEventListener('click', function(){
+    document.getElementById('text-area').classList.toggle('italic');
+})
+document.getElementById('under-line').addEventListener('click', function(){
+    document.getElementById('text-area').classList.toggle('underline');
+})
+document.getElementById('align-left').addEventListener('click', function(){
+    document.getElementById('text-area').classList.toggle('text-left');
+})
+document.getElementById('align-center').addEventListener('click', function(){
+    document.getElementById('text-area').classList.toggle('text-center');
+})
+document.getElementById('align-right').addEventListener('click', function(){
+    document.getElementById('text-area').classList.toggle('text-right');
+})
+document.getElementById('align-justify').addEventListener('click', function(){
+    document.getElementById('text-area').classList.toggle('text-justify');
+})
+document.getElementById('number-style').addEventListener('change', function(e){
+    const input = e.target.value;
+    document.getElementById('text-area').style.fontSize = input + 'px';
+})
+document.getElementById('text-transform').addEventListener('click', function(){
+    document.getElementById('text-area').classList.toggle('uppercase');
+})
+document.getElementById('text-color').addEventListener('change', function(e){
+    const color = e.target.value
+    document.getElementById('text-area').style.color = color;
+})
+
+
+function uploadBtn(){
+    if(document.getElementById('text-area').value !== ""){
+        alert('Your post is uploaded');
+    }
+}

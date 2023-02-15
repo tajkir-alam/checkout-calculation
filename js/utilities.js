@@ -1,3 +1,4 @@
+// Checkout Section
 function priceAdd(cartId, priceIs, priceAdded){
     document.getElementById(cartId).addEventListener('click', function(){
         const amount = document.getElementById(priceIs).innerText;
