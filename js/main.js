@@ -8,4 +8,8 @@ priceAdd('drone-cart', 'drone-price', 'drone-cost');
 priceAdd('mic-cart', 'mic-price', 'mic-cost');
 
 
-// total('action-cart');
+function checkoutBtn(){
+    if(document.getElementById('total-bill').innerText != 00){
+        alert('Your product will be deliver soon... Stay Tune!!!!!');
+    }
+}
