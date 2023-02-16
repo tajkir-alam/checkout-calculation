@@ -42,6 +42,11 @@ quantity('increase-btn-dslr-cam', 'dslr-cam-quantity');
 quantity('increase-btn-drone', 'drone-quantity');
 quantity('increase-btn-mic', 'mic-quantity');
 
+quantity('dicrease-btn-action-cam', 'action-cam-quantity');
+quantity('dicrease-btn-dslr-cam', 'dslr-cam-quantity');
+quantity('dicrease-btn-drone', 'drone-quantity');
+quantity('dicrease-btn-mic', 'mic-quantity');
+
 
 
 

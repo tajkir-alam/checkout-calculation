@@ -24,6 +24,10 @@ function priceAdd(cartId, priceIs, priceAdded, addQuantity){
         const quantityValues = document.getElementById(addQuantity);
         quantityValues.setAttribute('value', '1');       
 
+        const quantityCommons = document.querySelectorAll('.quantity-common');
+        for(const quantityCommon of quantityCommons){
+            quantityCommon.removeAttribute('disabled');
+        }
         
     })
 }
@@ -33,7 +37,8 @@ function priceAdd(cartId, priceIs, priceAdded, addQuantity){
 // Quantity increase & decrease section
 function quantity(plus, productAmount){
     document.getElementById(plus).addEventListener('click', function(){
-        const 
-        document.getElementById(productAmount)
+        const previousQuantity = document.getElementById(productAmount).value;
+        const currentQuantity = parseInt(previousQuantity) + 1; 
+        document.getElementById(productAmount).value = currentQuantity;
     })
 }
