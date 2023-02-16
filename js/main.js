@@ -1,5 +1,4 @@
 priceAdd('action-cart', 'action-cam-price', 'action-cam-cost', 'action-cam-quantity');
-// increaseAmount('action-cart', 'action-cam-price', 'action-cam-cost');
 
 priceAdd('camera-cart', 'dslr-cam-price', 'dslr-cam-cost', 'dslr-cam-quantity');
 
@@ -37,15 +36,15 @@ function checkoutBtn(){
     }
 }
 
-quantity('increase-btn-action-cam', 'action-cam-quantity');
-quantity('increase-btn-dslr-cam', 'dslr-cam-quantity');
-quantity('increase-btn-drone', 'drone-quantity');
-quantity('increase-btn-mic', 'mic-quantity');
+quantityPlus('increase-btn-action-cam', 'action-cam-quantity', 'action-cam-price', 'action-cam-cost');
+quantityPlus('increase-btn-dslr-cam', 'dslr-cam-quantity', 'dslr-cam-price', 'dslr-cam-cost');
+quantityPlus('increase-btn-drone', 'drone-quantity', 'drone-price', 'drone-cost');
+quantityPlus('increase-btn-mic', 'mic-quantity', 'mic-price', 'mic-cost');
 
-quantity('dicrease-btn-action-cam', 'action-cam-quantity');
-quantity('dicrease-btn-dslr-cam', 'dslr-cam-quantity');
-quantity('dicrease-btn-drone', 'drone-quantity');
-quantity('dicrease-btn-mic', 'mic-quantity');
+quantityMinus('dicrease-btn-action-cam', 'action-cam-quantity', 'action-cam-price', 'action-cam-cost');
+quantityMinus('dicrease-btn-dslr-cam', 'dslr-cam-quantity', 'dslr-cam-price', 'dslr-cam-cost');
+quantityMinus('dicrease-btn-drone', 'drone-quantity', 'drone-price', 'drone-cost');
+quantityMinus('dicrease-btn-mic', 'mic-quantity', 'mic-price', 'mic-cost');
 
 
 
