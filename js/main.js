@@ -1,11 +1,11 @@
-priceAdd('action-cart', 'action-cam-price', 'action-cam-cost');
+priceAdd('action-cart', 'action-cam-price', 'action-cam-cost', 'action-cam-quantity');
 // increaseAmount('action-cart', 'action-cam-price', 'action-cam-cost');
 
-priceAdd('camera-cart', 'dslr-cam-price', 'dslr-cam-cost');
+priceAdd('camera-cart', 'dslr-cam-price', 'dslr-cam-cost', 'dslr-cam-quantity');
 
-priceAdd('drone-cart', 'drone-price', 'drone-cost');
+priceAdd('drone-cart', 'drone-price', 'drone-cost', 'drone-quantity');
 
-priceAdd('mic-cart', 'mic-price', 'mic-cost');
+priceAdd('mic-cart', 'mic-price', 'mic-cost', 'mic-quantity');
 
 
 
@@ -36,6 +36,14 @@ function checkoutBtn(){
         alert('Your product will be deliver soon... Stay Tune!!!!!');
     }
 }
+
+quantity('increase-btn-action-cam', 'action-cam-quantity');
+quantity('increase-btn-dslr-cam', 'dslr-cam-quantity');
+quantity('increase-btn-drone', 'drone-quantity');
+quantity('increase-btn-mic', 'mic-quantity');
+
+
+
 
 
 
@@ -81,3 +89,8 @@ function uploadBtn(){
         document.getElementById('text-area').value = "";
     }
 }
+
+
+
+
+
